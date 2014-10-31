@@ -1,0 +1,122 @@
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+<body>
+
+	<!--<h1>Set your flair for <a href="http://www.reddit.com/r/pokemontrades/">/r/pokemontrades</a></h1>-->
+	
+	<div class="block"div>
+	
+	<form>
+
+		<div id="ign">
+			<label for="user">In Game Name</label>
+			<input type="text" id="user" value="IGN" class="input ign">
+			<select size="1" id="gametype" class="input dropdown">
+				<option selected="selected">-</option>
+				<option>X</option>
+				<option>Y</option>
+				<option>&#945;S</option>
+				<option>&#937;R</option>
+			</select>
+			<img id="slidebutton" src="http://static.tumblr.com/mx1vyag/eiQn837q8/plus.png" alt="Plus" class="image plus">
+		</div>
+
+		<div id="ignpile">
+			<div id="secondign">
+				<label for="user2" id="user2label">Second In Game Name</label>
+				<input type="text" id="user2" value="IGN" class="input ign">
+				<select size="1" id="gametype2" class="input dropdown">
+					<option selected="selected">-</option>
+					<option>X</option>
+					<option>Y</option>
+					<option>&#945;S</option>
+					<option>&#937;R</option>
+				</select>
+				<img width="10px">
+			</div>
+			
+			<div id="thirdign">
+				<label for="user3" id="user3label">Third In Game Name</label>
+				<input type="text" id="user3" value="IGN" class="input ign">
+				<select size="1" id="gametype3" class="input dropdown">
+					<option selected="selected">-</option>
+					<option>X</option>
+					<option>Y</option>
+					<option>&#945;S</option>
+					<option>&#937;R</option>
+				</select>
+				<img width="10px">
+			</div>
+			
+			<div id="fourthign">
+				<label for="user4" id="user4label">Fourth In Game Name</label>
+				<input type="text" id="user4" value="IGN" class="input ign">
+				<select size="1" id="gametype4" class="input dropdown">
+					<option selected="selected">-</option>
+					<option>X</option>
+					<option>Y</option>
+					<option>&#945;S</option>
+					<option>&#937;R</option>
+				</select>
+				<img width="10px">
+			</div>
+		</div>
+		
+		<div id="friendcode">
+			<label for="fc">Friend Code (Keep format)</label>
+			<input type="text" id="fc" value="0000-0000-0000" class="input fc">
+			<img id="slidebutton2" src="http://static.tumblr.com/mx1vyag/eiQn837q8/plus.png" alt="Plus" class="image plus">
+		</div>
+
+		<div id="secondfriendcode">
+			<label for="fc2">Second Friend Code</label>
+			<input type="text" id="fc2" value="0000-0000-0000" class="input fc">
+			<img width="10px">
+		</div>
+		
+		<div id="teamselect">
+			<label for="fc">Choose Your Side</label>
+			<div id="flairpreview"></div>
+			<select size="1" id="team" class="input team">
+				<option selected="selected" value="0">-</option>
+				<option value="1">Team Aqua (M)</option>
+				<option value="2">Team Aqua (F)</option>
+				<option value="3">Team Magma (M)</option>
+				<option value="4">Team Magma (F)</option>
+			</select>
+			<img width="10px">
+		</div>
+
+	<br/>
+	<div id="button" onclick="flairsend()" class="button slide">Send</div>
+	<br/>
+	
+	
+	</form>
+
+<p id="message"></p>
+
+<br/>
+
+
+<br/>
+<div id="notesbutton" class="button slide">Additional Information</div>
+<div id="notes">
+	<ul>
+		<li>The bot can take up to 10 minutes to update your flair</li>
+		<li>Your In Game Name must be 12 characters or less</li>
+		<li>You must keep the format of the Friend Code above</li>
+		<li>When you click 'send' a pre-formatted reddit message will open in a new tab</li>
+		<li>Send the message without editing it at all</li>
+	</ul>
+</div>
+
+<br/>
+
+
+<div class="bottom block">Maintained by <a href="https://www.reddit.com/message/compose/?to=NotSinceYesterday">/u/NotSinceYesterday</a>.</div>
+
+<script type="text/javascript" src="http://static.tumblr.com/mx1vyag/Uc9n31rj4/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" ssrc="/scripts/main.js">
