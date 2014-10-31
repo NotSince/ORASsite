@@ -1,24 +1,16 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         clean: {
-            debug: {
-                files: "dist/debug/*"
-            },
-            prod: {
-                files: "dist/prod/*"
-            }
+            debug: "dist/debug/*",
+            prod: "dist/prod/*"
         },
         less: {
             debug: {
                 options: {
-                    paths: ["src/styles"]
+                    paths: ["src/styles/"]
                 },
                 files: {
-                    cwd: "src/styles/",
-                    src: "**/*.less",
-                    dest: "dist/debug/styles/",
-                    ext: ".css",
-                    expand: true
+                    "dist/debug/styles/main.css": "src/styles/main.less"
                 }
             },
             prod: {
@@ -27,11 +19,7 @@ module.exports = function(grunt) {
                     cleancss: true
                 },
                 files: {
-                    cwd: "src/styles/",
-                    src: "**/*.less",
-                    dest: "dist/prod/styles/",
-                    ext: ".css",
-                    expand: true
+                    "dist/debug/styles/main.css": "src/styles/main.less"
                 }
             }
         },
@@ -47,8 +35,10 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks("grunt-clean");
+    grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-less");
+
+    grunt.registerTask("default", ["clean:debug", "less:debug", "copy:debug"]);
 }
 
