@@ -1,0 +1,25 @@
+{
+  "name": "ORASsite",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NotSince/ORASsite.git"
+  },
+  "author": "NotSinceYesterday",
+  "license": "All rights reserved.",
+  "bugs": {
+    "url": "https://github.com/NotSince/ORASsite/issues"
+  },
+  "homepage": "https://github.com/NotSince/ORASsite",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.12.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-clean": "^0.6.0"
+  }
+}
